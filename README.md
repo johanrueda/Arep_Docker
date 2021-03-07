@@ -1,4 +1,4 @@
-# Clima con un API externa
+# Taller de de modularización con virtualización e Introducción a Docker y a AWS
 Este programa tiene como funcionalidad retornar el clima en formato JSON en una api externo de cualquier ciudad, donde utiliza un Hashmap para hacer la simulacion de un Cache
 
 
