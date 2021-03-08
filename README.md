@@ -44,9 +44,13 @@ Primero creamos el docker compose para hacer la configuracion automatica de nues
 
 ![](imagenes/1.png)
 
+
+![](imagenes/1.PNG)
+
 luego creamos y ejecutamos las imagenes de docker para el balanceador de carga y el servicio en sus respectivos puertos
 
 ![](imagenes/2.png)
+
 
 ![](imagenes/3.png)
 
