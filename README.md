@@ -42,55 +42,52 @@ Este proyecto se desarrollo con:
 
 Primero creamos el docker compose para hacer la configuracion automatica de nuestro docker
 
-![](imagenes/1.png)
-
-
 ![](imagenes/1.PNG)
 
 luego creamos y ejecutamos las imagenes de docker para el balanceador de carga y el servicio en sus respectivos puertos
 
-![](imagenes/2.png)
+![](imagenes/2.PNG)
 
 
-![](imagenes/3.png)
+![](imagenes/3.PNG)
 
-![](imagenes/4.png)
+![](imagenes/4.PNG)
 
 Asi es como queda nuestro docker
 
-![](imagenes/5.png)
+![](imagenes/5.PNG)
 
 Luego vamos a ejecutarlo localemnte para verificar su funcionamiento
 
-![](imagenes/6.png)
+![](imagenes/6.PNG)
 
 Ahora vamos a crear un repositorio en docker hub y subir nuestras imagenes
 
-![](imagenes/7.png)
+![](imagenes/7.PNG)
 
 Para poder crear nuestra instancia de EC2 de AWS vamos a aws Educate y la lanzamos, para conectarnos utilizamos el siguiente comando
 
-![](imagenes/8.png)
+![](imagenes/8.PNG)
 
 Configuramos los respectivos puertos en el grupo de seguirdad de nuestra instancia
 
-![](imagenes/9.png)
+![](imagenes/9.PNG)
 
 instalamos docker en nuestra instancia
 
-![](imagenes/10.png)
+![](imagenes/10.PNG)
 
 le cambiamos el usuario a la instancia
 
-![](imagenes/11.png)
+![](imagenes/11.PNG)
 
 ahora lanzamos la imagen de nuestro docker a la instancia EC2
 
-![](imagenes/12.png)
+![](imagenes/12.PNG)
 
 y ahora verificamos su funcionamiento
 
-![](imagenes/13.png)
+![](imagenes/13.PNG)
 
 
 ## Autor
