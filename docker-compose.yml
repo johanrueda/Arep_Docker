@@ -1,0 +1,41 @@
+version: '2'
+
+
+services:
+    db:
+        image: mongo:latest
+        container_name: db
+        environment:
+            MONGO_INITDB_DATABASE: docker
+            MONGO_INITDB_ROOT_USERNAME: johanrueda
+            MONGO_INITDB_ROOT_PASSWORD: johanrueda
+        volumes:
+            - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+            - mongodb:/data/db
+            - mongodb_config:/data/configdb
+        ports:
+            - 27017:27017
+        command: mongod
+
+    loadbalancer:
+        build:
+            context: /balancer
+            dockerfile: Dockerfile
+        depends_on:
+            - web
+        container_name: balancer
+        ports:
+            - "4000:6000"
+
+    web:
+        build:
+            context: /docker
+            dockerfile: Dockerfile
+        depends_on:
+            - db
+        ports:
+            - "3001-3003:6000"
+
+volumes:
+    mongodb:
+    mongodb_config:
